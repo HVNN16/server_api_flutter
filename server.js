@@ -6,10 +6,12 @@ const Playlist = require("./model/PlaylistModel");
 const app = express();
 app.use(express.json());
 
+// Kết nối đến MongoDB
 mongoose
   .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 20000, // Thời gian timeout 20 giây
   })
   .then(() => console.log("Kết nối thành công tới MongoDB"))
   .catch((err) => console.error("Lỗi kết nối MongoDB:", err));
