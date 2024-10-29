@@ -1,0 +1,64 @@
+{
+  "playlists": [
+    {
+      "playlist_id": "pl001",
+      "name": "Top Hits",
+      "description": "The hottest tracks right now.",
+      "cover_url": "https://example.com/images/playlists/top-hits.jpg",
+      "tracks": [
+        {
+          "track_id": "12345",
+          "title": "Yêu Là Thế Ư",
+          "artist": {
+            "artist_id": "001",
+            "name": "Mỹ Tâm",
+            "popularity": 90,
+            "followers": 1000000,
+            "genres": ["Pop", "Ballad"],
+            "avatar_url": "https://example.com/images/artists/mytam.jpg"
+          },
+          "album": {
+            "album_id": "A001",
+            "name": "Tâm",
+            "release_date": "2021-10-15",
+            "cover_url": "https://example.com/images/albums/tam.jpg",
+            "total_tracks": 10
+          },
+          "duration_ms": 230000,
+          "preview_url": "https://example.com/songs/yeu-la-the-u.mp3",
+          "popularity": 85,
+          "added_at": "2021-10-16",
+          "explicit": false,
+          "likes": 25000,
+          "play_count": 500000
+        },
+        {
+          "track_id": "12346",
+          "title": "Cơn Mưa Ngang Qua",
+          "artist": {
+            "artist_id": "002",
+            "name": "Sơn Tùng M-TP",
+            "popularity": 95,
+            "followers": 2000000,
+            "genres": ["Pop", "Rap"],
+            "avatar_url": "https://example.com/images/artists/sontung.jpg"
+          },
+          "album": {
+            "album_id": "A002",
+            "name": "Sky",
+            "release_date": "2022-03-10",
+            "cover_url": "https://example.com/images/albums/sky.jpg",
+            "total_tracks": 8
+          },
+          "duration_ms": 240000,
+          "preview_url": "https://example.com/songs/con-mua-ngang-qua.mp3",
+          "popularity": 92,
+          "added_at": "2022-03-11",
+          "explicit": false,
+          "likes": 56000,
+          "play_count": 1200000
+        }
+      ]
+    }
+  ]
+}
