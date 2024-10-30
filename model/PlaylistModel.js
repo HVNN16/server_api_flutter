@@ -1,10 +1,12 @@
 const mongoose = require("mongoose");
 
+const artistSchema = new mongoose.Schema({
+  name: { type: String, required: true, default: "Unknown Artist" }, // Đặt giá trị mặc định cho artist
+});
+
 const trackSchema = new mongoose.Schema({
   title: { type: String, required: true, default: "Unknown Title" }, // Đặt giá trị mặc định nếu không có
-  artist: {
-    name: { type: String, required: true, default: "Unknown Artist" }, // Đặt giá trị mặc định cho artist
-  },
+  artist: { type: artistSchema, required: true }, // Đảm bảo artist không phải là null
 });
 
 const playlistSchema = new mongoose.Schema({
@@ -15,4 +17,5 @@ const playlistSchema = new mongoose.Schema({
   tracks: { type: [trackSchema], default: [] }, // Đặt mảng mặc định rỗng nếu không có track nào
 });
 
-module.exports = mongoose.model("Playlist", playlistSchema);
+const Playlist = mongoose.model("Playlist", playlistSchema);
+module.exports = Playlist;
